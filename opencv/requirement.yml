@@ -1,0 +1,10 @@
+name: OpenCV
+dependencies:
+  - python
+  - ipython
+  - jupyter
+  - scipy
+  - matplotlib
+  - numpy
+  - pandas
+  - opencv
