@@ -17,6 +17,7 @@
 ### 工具部分 🪒
 
 - hsv_extractor 对指定图像的 HSV 进行处理，运行以后白色的部分是保留的，便于后期 inrange 操作（详见 004）
+  - 在运行 hsv_extractor 以后，会在终端打印对应的 HSV 阈值。
 
 ## Scipy
 
