@@ -26,8 +26,17 @@
 - 002 一些常见的函数以及使用方法
 - 🔼003 使用 numpy 解决线性问题
 
+## mathematics
+
+- 001 使用 Fast Fourier Transform 对音频进行处理 (施工中)
+
+## matplotlib
+
+- 001 了解 matplotlib 几个基本的绘图
+
 # 如何安装环境 🌍
 
 ```bash
+cd [the path you want]
 conda env update -f requirements.yml
 ```

@@ -1,0 +1,8 @@
+name: Mathematics
+dependencies:
+  - python
+  - ipython
+  - jupyter
+  - matplotlib
+  - numpy
+  - scipy
