@@ -1,0 +1,8 @@
+name: MatPlotlib
+dependencies:
+  - python
+  - ipython
+  - jupyter
+  - matplotlib
+  - numpy
+  - pandas

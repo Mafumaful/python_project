@@ -13,6 +13,7 @@
 - 005 首先把图像处理成灰度图，通过不同算法对图像的边缘进行检测
 - 006 采用不同的算法对图像进行旋转
 - 007 量化以及分辨率处理
+- 008 提取对象的 HSV 值并打印出来，与工具部分的 hsv_extractor 相同，这里重新写一遍
 
 ### 工具部分 🪒
 
@@ -28,5 +29,5 @@
 # 如何安装环境 🌍
 
 ```bash
-conda env update -f requirement.yml
+conda env update -f requirements.yml
 ```
