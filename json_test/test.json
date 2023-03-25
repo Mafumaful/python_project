@@ -1,0 +1,17 @@
+{
+  "name": "Genie",
+  "age": 1000,
+  "favorite_fruit": "magic lamp",
+  "address": {
+    "street": "123 Magic Avenue",
+    "city": "Agrabah",
+    "state": "Unknown"
+  },
+  "interests": [
+    "helping people",
+    "granting wishes",
+    "coding",
+    "learning new things",
+    "floating through the ether"
+  ]
+}
