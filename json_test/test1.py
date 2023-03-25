@@ -14,3 +14,5 @@ print(data['name'])
 print(data['address'])
 # print the address of the key 'address' and the key 'street'
 print(data['address']['street'])
+# print the interest of the key 'interest'
+print(data['interests'][0])
