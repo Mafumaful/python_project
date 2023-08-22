@@ -34,6 +34,12 @@
 
 - 001 了解 matplotlib 几个基本的绘图
 
+## Physics_based_DL
+
+[主要参考](https://arxiv.org/pdf/2109.05237.pdf)
+
+这篇文章来记录一点学习机器学习的过程。
+
 # 如何安装环境 🌍
 
 ```bash
