@@ -1,8 +1,8 @@
 import torch
 
 a = torch.arange(4).reshape(2,2)
-print("a=",a)
+print("a=\n",a)
 b = torch.arange(12).reshape(3,2,2)
-print("b=",b)
+print("b=\n",b)
 
-print("a+b=",a+b)
+print("a+b=\n",a+b)
