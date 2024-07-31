@@ -1,0 +1,8 @@
+name: PyGame
+dependencies:
+  - python
+  - ipython
+  - jupyter
+  - pygame
+  - numpy
+  - pandas
