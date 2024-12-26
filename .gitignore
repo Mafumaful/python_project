@@ -6,3 +6,5 @@ files
 test
 test*
 *.db
+data
+model*.pt
