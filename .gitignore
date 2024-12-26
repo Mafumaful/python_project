@@ -8,3 +8,5 @@ test*
 *.db
 data
 model*.pt
+runs
+checkpoint-*.pth
