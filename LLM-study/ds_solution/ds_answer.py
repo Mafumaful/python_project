@@ -163,6 +163,7 @@ def train():
             tgt = tgt.contiguous()
             
             tgt_input = tgt[:, :-1].contiguous()
+            tgt_input[tgt_input == Config.eos_token] = Config.pad_token
             tgt_output = tgt[:, 1:].contiguous()
             
             tgt_mask = nn.Transformer.generate_square_subsequent_mask(tgt_input.size(1)).to(Config.device)
