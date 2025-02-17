@@ -18,7 +18,7 @@ class Config:
     # 模型参数
     d_model = 128
     nhead = 4
-    num_layers = 2
+    num_layers = 2 # numbers of encoder and decoder layers
     dim_feedforward = 512
     dropout = 0.1
     
@@ -169,6 +169,7 @@ def train():
             tgt_mask = nn.Transformer.generate_square_subsequent_mask(tgt_input.size(1)).to(Config.device)
             
             # 前向传播
+            # print(src.shape, tgt_input.shape, tgt_output.shape)
             output = model(src, tgt_input, tgt_mask=tgt_mask)
             loss = criterion(output.reshape(-1, Config.vocab_size), tgt_output.reshape(-1))
             
@@ -267,11 +268,13 @@ def test():
             
             # Move tensors to CPU before numpy conversion
             src_cpu = src[0, 1:-1].cpu()
+            src_cpu[src_cpu == Config.eos_token] = Config.pad_token
             mask = src_cpu != Config.pad_token
             input_seq = src_cpu[mask].numpy()
             
             # 处理真实标签（去掉SOS/EOS/PAD）
             true_seq = tgt[0, 1:-1]
+            true_seq[true_seq == Config.eos_token] = Config.pad_token
             true_seq = true_seq[true_seq != Config.pad_token].numpy()
             
             # 转换预测结果到CPU
